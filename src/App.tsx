@@ -20,6 +20,8 @@ import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
 import ProtectedRoute from "./components/ProtectedRoute";
 
+import CreatorTable from "./pages/Masters/CreatorTable";
+
 export default function App() {
   return (
     <Router>
@@ -44,7 +46,7 @@ export default function App() {
           <Route path="profile" element={<UserProfiles />} />
           <Route path="calendar" element={<Calendar />} />
           <Route path="blank" element={<Blank />} />
-
+          <Route path="creator" element={<CreatorTable />} />
           {/* Forms */}
           <Route path="form-elements" element={<FormElements />} />
 
@@ -66,6 +68,11 @@ export default function App() {
 
         {/* Fallback Route */}
         <Route path="*" element={<NotFound />} />
+
+
+
+
+        
       </Routes>
     </Router>
   );

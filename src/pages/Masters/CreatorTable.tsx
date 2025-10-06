@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import MasterLayout from "../../../components/layout/MasterLayout";
-import Pagination from "../../../components/Pagination";
+// import MasterLayout from "../../../components/layout/MasterLayout";
+import Pagination from "../../components/Pagination";
 import {
   getAllCreator,
   addCreator,
   updateCreator,
   deleteCreator,
-} from "../../../../api";
-import { getDateTab } from "../../../../utils";
+} from "../../api";
+import { getDateTab } from "../../utils.jsx";
+// import { getDateTab } from "../../utils.jsx";
 import Swal from "sweetalert2";
 
 export default function CreatorTable() {
@@ -287,7 +288,7 @@ export default function CreatorTable() {
       </>
     );
   }
-  <MasterLayout>
+  // <MasterLayout>
     {/* Header */}
     <div className="px-5 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
       <div>
@@ -440,5 +441,5 @@ export default function CreatorTable() {
         </div>
       </div>
     )}
-  </MasterLayout>
+  // </MasterLayout>
 }
